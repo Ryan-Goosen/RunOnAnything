@@ -2,8 +2,8 @@
 
 <br />
 <div align="center">
-  <a href="https://codeberg.org/Ryan-Goosen/runOnAnything">
-    <img src="readme_graphics/Your paragraph text (Circle Sticker).png" alt="Logo" style="width:100px; border-radius: 50%;">
+  <a href="">
+    <img src="readme_graphics/Your paragraph text (Circle Sticker).png" alt="Logo" width="100" height="100"">
   </a>
 
   <h3 align="center">Run On Anything</h3>
