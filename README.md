@@ -1,182 +1,71 @@
-<a id="readme-top"></a>
+# Run On Anything
 
-<br />
-<div align="center">
-  <a href="">
-    <img src="readme_graphics/Your paragraph text (Circle Sticker).png" alt="Logo" width="100" height="100"">
-  </a>
-
-  <h3 align="center">Run On Anything</h3>
-
-  <p align="center">
-    A Python library that lets you run your Python project on any machine with Python installed.
-    <br />
-    <a href="https://codeberg.org/Ryan-Goosen/run-on-anything"><strong>Explore the docs »</strong></a>
-
-</div>
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-This project provides a Python script that runs you Python file (containing a `main` or entry point) inside a virtual environment created with a specified Python version anywhere  between 3.0 and 3.14.
-
-It automatically installs dependencies from one of athe following (if present):
-- `requirements`
-- `uv.lock`
-- `pyproject.toml`
-
-
-Here's why:
-* Avoids the "works on my machine" issue.
-* Allows anyone to run your project with minimal setup.
-* Simple install, its useable as a llibrary or directly from the internet.
-
-You can install it via pip or import it directly into your project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+> A Python library that lets you run your Python project on any machine with Python installed.
 
 ---
 
-### Built With
+## About
 
-* [![Python][Python]][Python]
+### What it does
+Runs your Python files inside a virtual environment created with a specified Python version (3.0 to 3.14). Automatically installs dependencies from `requirements.txt`, `uv.lock`, or `pyproject.toml` if present.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Why I built it
+To avoid the "works on my machine" problem and allow anyone to run Python projects with minimal setup.
 
+### Who it's for
+Python developers who want to share their code and ensure it runs consistently across different machines.
 
-<!-- GETTING STARTED -->
+---
+
+## Built With
+
+| Category | Tool |
+| -------- | ---- |
+| **Language** | Python |
+| **Framework** | None (Library) |
+| **Libraries** | setuptools |
+
+---
+
 ## Getting Started
-
-These instructions will take you through the two different options you have to utilize the program inside you projects.
 
 ### Prerequisites
 
-Python 3.0 or newer.
-* Check your python version with:
-  ```sh
-  python --version
-  ```
+- Python 3.0+
 
 ### Installation
-#### Options 1: Clone and Install locally
 
-1. Clone the repo
-   ```sh
-   git clone https://codeberg.org/Ryan-Goosen/runOnAnything
-   ```
+**Option 1: Install from Codeberg**
+```bash
+pip install git+https://codeberg.org/Ryan-Goosen/runOnAnything
+```
 
-2. Adding the repo to pip
+**Option 2: Clone and install locally**
+```bash
+git clone https://codeberg.org/Ryan-Goosen/runOnAnything.git
+cd runOnAnything
+pip install .
+```
 
-   Inside of the repos directory run the following command.
-   ```sh
-       pip install .
-   ```
-
-3. You can now utilize the repo as a library inside of your projects. 
-
-#### Options 2: Install directly from Codeberg
-
-1. Add the repo to pip
-
-  ```sh
-    pip install git+https://codeberg.org/Ryan-Goosen/runOnAnything
-  ```
-
-2. You can now utilize the repo as a library inside of your project. 
-
+---
 
 ## Usage
-
-To use the library create a new .py file and import the library. Call the `run()` function, passing in:
-- the file name containing you main function
-- the python version to run it with
 
 ```python
 from env_setup import run
 
-run("main.py", 3.13.0)
+# Run your main.py with Python 3.13
+run("main.py", 3.13)
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Working Demo
-- [ ] Run the program from the run function instead of having to create a new method
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-### Top contributors:
-
-- ME
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
-
-
-<!-- CONTACT -->
-## Contact
-
-Project Link: [https://codeberg.org/Ryan-Goosen/runOnAnything](https://codeberg.org/Ryan-Goosen/runOnAnything)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-I would like to give credit to the following people for helping me.
-
-* [ReadMe Template](https://github.com/othneildrew/Best-README-Template) 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-[Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+- [othneildrew Best-README-Template](https://github.com/othneildrew/Best-README-Template)
